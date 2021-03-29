@@ -1,156 +1,227 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
 .header {
-    width: 100%;
+    width : 100%;
+    padding-bottom: 35px;
+    -webkit-box-shadow: 0px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 10px 8px 0px rgba(34, 60, 80, 0.2);
+}
 
-
+.content {
+    width : 80%;
+    margin: auto;
 }
 
 .header_info {
-    width: 100%;
-    padding: 11px 0px 11px 0px;
-    background-color: #114886;
+    width            : 100%;
+    padding          : 11px 0 11px 0;
+    background-color : #06266F;
 }
 
 .main {
-    height: 100%;
-    width: 100%;
+    height : 100%;
+    width  : 100%;
 }
 
 .header_info-content {
-    width: 1500px;
-    display: flex;
-    margin: auto;
-    align-items: center;
+    display     : flex;
+    margin      : auto;
+    align-items : center;
 }
 
 .header_info-location {
-    display: flex;
-    align-items: center;
+    display     : flex;
+    align-items : center;
 }
 
 .header_info-location .location-img {
-    width: 50px;
-    height: 50px;
+    width  : 50px;
+    height : 50px;
 
 }
 
 .header_info-location .location-img img {
-    width: 100%;
-    height: 100%;
+    width  : 100%;
+    height : 100%;
 
 }
 
 .header_info-location .location-text {
-    color: #fff;
-    font-weight: bold;
-    font-family: 'OpenSans', Arial, sans-serif;
+    color       : #fff;
+    font-weight : bold;
+    font-family : 'OpenSans', Arial, sans-serif;
 }
 
 .header_info-phone {
-    margin-left: 100px;
-    color: #fff;
-    font-weight: bold;
-    font-family: 'OpenSans', Arial, sans-serif;
-    font-size: 25px;
-    display: flex;
-    flex-direction: row-reverse;
+    margin-left    : 100px;
+    color          : #fff;
+    font-weight    : bold;
+    font-family    : 'OpenSans', Arial, sans-serif;
+    font-size      : 25px;
+    display        : flex;
+    flex-direction : row-reverse;
 }
 
 .header_info-phone .phone-img {
-    width: 30px;
-    height: 30px;
+    width  : 30px;
+    height : 30px;
 }
 
 .phone-img {
-    padding-right: 10px;
+    padding-right : 10px;
 }
 
 .phone-img img {
-    width: 100%;
-    height: 100%;
+    width  : 100%;
+    height : 100%;
 }
 
 .header_content {
-    width: 1500px;
-    display: flex;
-    margin: auto;
+    display        : flex;
+    margin         : auto;
+    align-items    : center;
+    padding-top    : 20px;
+    padding-bottom : 20px;
+    justify-content: space-between;
+}
+
+.header_content .header_content-item {
+    display : flex;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    flex-grow: 1;
+}
+.header_content .header_content-item:first-child{
+    justify-content: flex-start;
+}
+
+.header_content .header_content-item:last-child{
+
+    justify-content: space-between;
 }
 
 .header_content .logo-img {
-    width: 350px;
-    height: 200px;
-    padding-right: 5px;
+    max-width     : 350px;
+    max-height    : 200px;
+    min-width     : 350px;
+    min-height    : 200px;
+    padding-right : 5px;
 }
 
 .header_content .logo-img img {
-    width: 100%;
-    height: 100%;
+    width  : 100%;
+    height : 100%;
 }
 
 .header_content-email {
-    padding-top: 10px;
+    padding-top : 10px;
 }
 
 .header_content .header_content-address {
-    color: #000;
-    font-family: 'OpenSans', Arial, sans-serif;
-    padding-left: 10px;
+    color        : #000;
+    font-family  : 'OpenSans', Arial, sans-serif;
+    padding-left : 10px;
 }
 
 .header_content-time .time-days {
-    color: #000;
-    font-family: 'OpenSans', Arial, sans-serif;
-    padding-bottom: 5px;
+    color          : #000;
+    font-family    : 'OpenSans', Arial, sans-serif;
+    padding-bottom : 5px;
 }
 
 .header_content-time {
-    margin-left: 200px;
-    color: #000;
-    font-family: 'OpenSans', Arial, sans-serif;
+    color       : #000;
+    font-family : 'OpenSans', Arial, sans-serif;
 
 }
 
 .time-title {
-    padding-bottom: 9px;
-    display: flex;
+    padding-bottom : 9px;
+    display        : flex;
 }
 
 .calendar-img {
-    width: 20px;
-    height: 20px;
-    margin-right: 7px;
+    width        : 20px;
+    height       : 20px;
+    margin-right : 7px;
 }
 
 .calendar-img img {
-    width: 100%;
-    height: 100%;
+    width  : 100%;
+    height : 100%;
 }
 
 .card-img {
-    width: 30px;
-    height: 30px;
-    padding: 15px 25px 15px 25px;
-    background-color: #6495ed;
+    width            : 30px;
+    height           : 30px;
+    padding          : 15px 25px 15px 25px;
+    background-color : #1240AB;
+    -webkit-box-shadow: -11px 0px 25px -8px rgba(67, 67, 67, 0.6);
+    -moz-box-shadow: -11px 0px 25px -8px rgba(67, 67, 67, 0.6);
+    box-shadow: -11px 0px 25px -8px rgba(67, 67, 67, 0.6);
 }
 
 .card-img img {
-    width: 100%;
-    height: 100%;
+    width  : 100%;
+    height : 100%;
 }
 
 .card {
-    margin-left: 200px;
-    display: flex;
-    color: #fff;
-    font-family: 'OpenSans', Arial, sans-serif;
-    background-color: #114886;
-    align-items: center;
+    display          : flex;
+    color            : #fff;
+    font-family      : 'OpenSans', Arial, sans-serif;
+    align-items      : center;
+
+    background-color : #06266F;
 }
 
 .card-text {
-    padding: 15px 25px 15px 45px;
+    padding : 15px 45px 15px 45px;
+    font-weight: bold;
+}
+
+.header_search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header_search .search {
+    width: 100%;
+}
+
+.header_search .search .input-search{
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #1240AB;
+    height: 40px;
+    outline: none;
+    font-family: 'OpenSans', Arial, sans-serif;
+    color: #044886;
+    font-size: 14px;
+}
+
+.header_search .search_submit {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 40px;
+    padding-right: 20px;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: 'OpenSans', Arial, sans-serif;
+    color: #303030 !important;
+    outline: none;
+    border: 0;
+    background: url("../image/search-icon.png") no-repeat center right transparent;
+    cursor: pointer;
 }

@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Мото - магазин запчастей</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet"
+          href="css/normalize.css">
     <link rel="stylesheet"
           href="css/main.css">
 </head>
@@ -12,12 +13,13 @@
     <header class="header">
         <div class="header_info">
 
-            <div class="header_info-content">
+            <div class="header_info-content content">
 
                 <div class="header_info-location">
                     <div class="location-img">
 
-                        <img src="image/geometka.png" alt="">
+                        <img src="image/geometka.png"
+                             alt="">
                     </div>
                     <div class="location-text">
                         Где нас найти
@@ -26,54 +28,70 @@
                 <div class="header_info-phone">
                     +7 (343) 201-45-67
                     <div class="phone-img">
-                        <img src="image/phone.png" alt="">
+                        <img src="image/phone.png"
+                             alt="">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="header_content">
-
-            <div class="logo-img">
-                <img src="image/logo.jpg" alt="">
-            </div>
-            <div class="header_content-address">
-                Магазин на ул.Донбасская 23
-                <div class="header_content-email">
-                    igor.karimov.1998@mail.ru
+        <div class="header_content content">
+            <div class="header_content-item">
+                <div class="logo-img">
+                    <img src="image/logo.jpg"
+                         alt="">
                 </div>
-            </div>
-
-            <div class="header_content-time">
-
-                <div class="time-title">
-                    <div class=calendar-img>
-                        <img src="image/calendar.png" alt="">
-                    </div>
-                    <div class="time-title-text">
-                        График работы:
+                <div class="header_content-address">
+                    Магазин на ул.Донбасская 23
+                    <div class="header_content-email">
+                        igor.karimov.1998@mail.ru
                     </div>
                 </div>
-                <div class="time-days">
-                    Пн-Пт:
-                    <strong>10:00-19:00</strong>
-                </div>
-                <div class="time-days">
-                    Сб:
-                    <strong>10:00-17:30</strong>
-                </div>
-                <div class="time-days">
-                    Вс:
-                    <strong>10:00-15:00</strong>
-                </div>
             </div>
-            <div class="card">
+            <div class="header_content-item">
+                <div class="header_content-time">
 
-                <div class="card-text">
-                    Корзина
+                    <div class="time-title">
+                        <div class="calendar-img">
+                            <img src="image/calendar.png"
+                                 alt="">
+                        </div>
+                        <div class="time-title-text">
+                            График работы:
+                        </div>
+                    </div>
+                    <div class="time-days">
+                        Пн-Пт:
+                        <strong>10:00-19:00</strong>
+                    </div>
+                    <div class="time-days">
+                        Сб:
+                        <strong>10:00-17:30</strong>
+                    </div>
+                    <div class="time-days">
+                        Вс:
+                        <strong>10:00-15:00</strong>
+                    </div>
                 </div>
-                <div class="card-img">
-                    <img src="image/card.png" alt="">
-                </div>
+                <a href="">
+                    <div class="card">
+
+                        <div class="card-text">
+                            Корзина
+                        </div>
+                        <div class="card-img">
+                            <img src="image/card.png"
+                                 alt="">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="header_search content">
+            <div class="search">
+                <form action="">
+                    <input type="text" class="input-search" value="Поиск товара" name="search" onblur="if(this.value==='') this.value='Поиск товара';" onfocus="if(this.value==='Поиск товара') this.value=''" autocomplete="off">
+                    <input type="submit" class="search_submit" value="">
+                </form>
             </div>
         </div>
 
