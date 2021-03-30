@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="shortcut icon" type="image/png" href="image/logo2.png"/>
     <meta charset="UTF-8">
     <title>Мото - магазин запчастей</title>
     <link rel="stylesheet"
@@ -87,9 +88,35 @@
             </div>
         </div>
         <div class="header_search content">
+
+            <nav>
+                <div class="menu_title" id="menu_title">
+                    <div class="burgermenu-img">
+                        <img src="image/burgermenu.png" alt="">
+                    </div>
+                    Каталог
+
+                </div>
+
+                <div class="menu" id="menu">
+                    <ul>
+                        <li>квадроциклы ATV</li>
+                        <li>питбайки и мотоциклы</li>
+                        <li>снегоходы и мотобуксировщики</li>
+                        <li>скутеры и мопеды</li>
+                        <li>шины и камеры</li>
+                        <li>экипировка</li>
+                        <li>масла</li>
+                        <li>запчасти</li>
+                    </ul>
+                </div>
+            </nav>
             <div class="search">
+
                 <form action="">
-                    <input type="text" class="input-search" value="Поиск товара" name="search" onblur="if(this.value==='') this.value='Поиск товара';" onfocus="if(this.value==='Поиск товара') this.value=''" autocomplete="off">
+                    <input type="text" class="input-search" value="Поиск товара" name="search"
+                           onblur="if(this.value==='') this.value='Поиск товара';"
+                           onfocus="if(this.value==='Поиск товара') this.value=''" autocomplete="off">
                     <input type="submit" class="search_submit" value="">
                 </form>
             </div>
@@ -98,6 +125,16 @@
     </header>
 </div>
 
-
+<script
+        src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+        crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function () {
+        $("#menu_title").click(function () {
+            $("#menu").toggleClass("menu_active")
+        });
+    });
+</script>
 </body>
 </html>
