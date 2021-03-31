@@ -254,7 +254,7 @@ ul, li {
 .menu {
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: #ffffff;
     border: 1px solid #f0f0f0;
     top: 94px;
 }
@@ -301,13 +301,14 @@ nav {
     cursor: pointer;
 }
 
-main{
+main {
     background: #f7fafb;
 }
 
 .category {
     padding: 80px 0 20px 0;
 }
+
 .title {
     text-align: center;
     font-family: 'OpenSans', Arial, sans-serif;
@@ -322,7 +323,7 @@ main{
 
 }
 
-.category_content-element{
+.category_content-element {
     width: 300px;
     height: 300px;
     border: 1px solid #f0f0f0;
@@ -340,7 +341,7 @@ main{
     box-shadow: 0px 0px 12px 5px rgba(34, 60, 80, 0.2);
 }
 
-.category_content-element-big{
+.category_content-element-big {
     width: 600px;
     height: 620px;
     border: 1px solid #f0f0f0;
@@ -358,7 +359,7 @@ main{
     box-shadow: 0px 0px 12px 5px rgba(34, 60, 80, 0.2);
 }
 
-.category_content{
+.category_content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -370,4 +371,40 @@ main{
     font-size: 21px;
     font-weight: 400;
     text-transform: uppercase;
+}
+
+.company {
+    background: white;
+    padding-top: 80px;
+}
+
+.text-all {
+    font-family: 'OpenSans', Arial, sans-serif;
+    text-align: center;
+    font-size: 25px;
+}
+
+.text-1 {
+    padding-bottom: 20px;
+}
+
+.text-2 {
+    padding-bottom: 20px;
+}
+.text-map{
+    text-align: center;
+    font-family: 'OpenSans', Arial, sans-serif;
+    font-size: 32px;
+    color: #2b2a29;
+    font-weight: bold;
+    padding-bottom: 70px;
+    padding-top: 70px;
+}
+.address{
+    color: #2b2a29;
+    font-family: 'OpenSans', Arial, sans-serif;
+    font-size: 20px;
+}
+.photo-img{
+    padding-top: 20px;
 }
