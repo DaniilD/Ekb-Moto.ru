@@ -411,7 +411,12 @@ main {
 .photo-img img{
     width: 800px;
     height: 550px;
+    margin: auto;
 }
 .map-google{
     padding-top: 50px;
+}
+.map-block{
+    width: 80%;
+    margin: auto;
 }
