@@ -381,7 +381,7 @@ main {
 .text-all {
     font-family: 'OpenSans', Arial, sans-serif;
     text-align: center;
-    font-size: 25px;
+    font-size: 23px;
 }
 
 .text-1 {
@@ -407,4 +407,11 @@ main {
 }
 .photo-img{
     padding-top: 20px;
+}
+.photo-img img{
+    width: 800px;
+    height: 550px;
+}
+.map-google{
+    padding-top: 50px;
 }
