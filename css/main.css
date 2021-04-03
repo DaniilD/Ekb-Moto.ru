@@ -332,6 +332,7 @@ main {
     align-items: flex-end;
     justify-content: center;
     transition: 0.3s all;
+    background-size: cover;
 }
 
 .category_content-element:hover {
@@ -376,21 +377,15 @@ main {
 .company {
     background: white;
     padding-top: 80px;
+    padding-bottom: 80px;
 }
 
-.text-all {
+.company-texts {
     font-family: 'OpenSans', Arial, sans-serif;
     text-align: center;
     font-size: 23px;
 }
 
-.text-1 {
-    padding-bottom: 20px;
-}
-
-.text-2 {
-    padding-bottom: 20px;
-}
 .text-map{
     text-align: center;
     font-family: 'OpenSans', Arial, sans-serif;
@@ -420,7 +415,7 @@ main {
     width: 80%;
     margin: auto;
 }
-.footer{
+footer{
     padding-top: 50px;
     padding-bottom: 50px;
     background-color: #333333;
@@ -433,8 +428,8 @@ main {
     padding-left: 45px;
 }
 .social-img {
-    width: 50px;
-    height: 50px;
+    width: 65px;
+    height: 65px;
 }
 .social-img img{
     width: 100%;
@@ -442,27 +437,30 @@ main {
 }
 .footer-content{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
-.footer-item .contact{
+.footer-item .footer-contacts{
     margin-left: 150px;
     color: #ffffff;
     font-family: 'OpenSans', Arial, sans-serif;
     padding-left: 10px;
+
 }
-.contact-title{
+.footer-contacts .contact-title{
+    font-weight:bold;
     padding-top: 9px;
 }
-.contact-adders{
+.footer-contacts .contact-adders{
     padding-top: 9px;
 }
-.contact-email{
+.footer-contacts .contact-email{
     padding-top: 9px;
 }
-.contact-phone{
+.footer-contacts .contact-phone{
     padding-top: 9px;
 }
-.contact-time{
+.footer-contacts .contact-time{
     padding-top: 9px;
 }
 
