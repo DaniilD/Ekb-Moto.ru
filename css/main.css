@@ -3,6 +3,7 @@
 a {
     cursor: pointer;
     text-decoration: none;
+    color: inherit;
 }
 
 ul, li {
@@ -555,7 +556,7 @@ footer {
 .delivery {
     padding-top: 80px;
     color: #2b2a29;
-    font-size: 16px;
+    font-size: 19px;
     font-family: 'OpenSans', Arial, sans-serif;
 }
 
@@ -566,7 +567,7 @@ footer {
 .company-site {
     padding-top: 80px;
     color: #2b2a29;
-    font-size: 16px;
+    font-size: 19px;
     font-family: 'OpenSans', Arial, sans-serif;
     padding-bottom: 40px;
 }
@@ -579,10 +580,11 @@ footer {
     width: 500px;
     height: 150px;
     padding-top: 10px;
-
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     text-align: center;
-
+    display: flex;
     color: white;
     font-size: 19px;
     font-family: 'OpenSans', Arial, sans-serif;
@@ -602,5 +604,17 @@ footer {
     font-family: 'OpenSans', Arial, sans-serif;
     color: #2b2a29;
     padding-bottom: 40px;
+    text-align: center;
 }
+.delivery-img{
+    width: 60px;
+    height: 60px;
+    padding: 9px 0 9px 0;
+}
+.delivery-img img{
+    height: 100%;
+    width:  100%;
+
+}
+
 
