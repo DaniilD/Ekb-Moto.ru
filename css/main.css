@@ -312,7 +312,7 @@ main {
 .title {
     text-align: center;
     font-family: 'OpenSans', Arial, sans-serif;
-    font-size: 32px;
+    font-size: 30px;
     color: #2b2a29;
     font-weight: bold;
     padding-bottom: 70px;
@@ -386,86 +386,105 @@ main {
     font-size: 23px;
 }
 
-.text-map{
+.text-map {
     text-align: center;
     font-family: 'OpenSans', Arial, sans-serif;
-    font-size: 32px;
+    font-size: 30px;
     color: #2b2a29;
     font-weight: bold;
-    padding-bottom: 70px;
-    padding-top: 70px;
+    padding-bottom: 60px;
+    padding-top: 60px;
 }
-.address{
+
+.address {
     color: #2b2a29;
     font-family: 'OpenSans', Arial, sans-serif;
     font-size: 20px;
 }
-.photo-img{
+
+.photo-img {
     padding-top: 20px;
 }
-.photo-img img{
-    width: 800px;
-    height: 550px;
+
+.photo-img img {
+    width: 1008px;
+    height: 477px;
     margin: auto;
 }
-.map-google{
-    padding-top: 50px;
+
+.map-google {
+    padding-top: 5px;
 }
-.map-block{
+
+.map-block {
     width: 80%;
     margin: auto;
 }
-footer{
+
+footer {
     padding-top: 50px;
     padding-bottom: 50px;
     background-color: #333333;
 }
-.footer-logo img{
+
+.footer-logo img {
     width: 170px;
 }
-.socials{
+
+.socials {
     display: flex;
     justify-content: center;
 }
+
 .social-img {
     width: 65px;
     height: 65px;
 }
-.social-img img{
+
+.social-img img {
     width: 100%;
     height: 100%;
 }
-.footer-content{
+
+.footer-content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
-.footer-item .footer-contacts{
+
+.footer-item .footer-contacts {
     color: #ffffff;
     font-family: 'OpenSans', Arial, sans-serif;
     padding-left: 10px;
 }
-.footer-contacts .contact-title{
-    font-weight:bold;
+
+.footer-contacts .contact-title {
+    font-weight: bold;
 }
-.footer-contacts .contact-adders{
+
+.footer-contacts .contact-adders {
     padding-top: 9px;
 }
-.footer-contacts .contact-email{
+
+.footer-contacts .contact-email {
     padding-top: 9px;
 }
-.footer-contacts .contact-phone{
+
+.footer-contacts .contact-phone {
     padding-top: 9px;
 }
-.footer-contacts .contact-time{
+
+.footer-contacts .contact-time {
     padding-top: 9px;
 }
-.advantages{
+
+.advantages {
     justify-content: space-between;
     display: flex;
-padding-top: 20px;
+    padding-top: 20px;
 }
-.advantages-item{
+
+.advantages-item {
     display: flex;
     -webkit-box-flex: 0;
     align-items: center;
@@ -477,46 +496,111 @@ padding-top: 20px;
     box-shadow: 0px 0px 10px rgb(0 0 0 / 40%);
 
 }
-.advantages-item:only-child{
+
+.advantages-item:only-child {
     width: 50%;
 }
+
 .item-img {
-  max-width: 90px;
+    max-width: 90px;
     min-width: 90px;
     height: 90px;
     min-height: 90px;
     max-height: 90px;
 }
-.item-img img{
+
+.item-img img {
     width: 100%;
     height: 100%;
 }
+
 .footer-item .footer-company {
     color: #ffffff;
     font-family: 'OpenSans', Arial, sans-serif;
     padding-left: 10px;
 }
-.footer-catalog-title{
-    font-weight:bold;
+
+.footer-catalog-title {
+    font-weight: bold;
 }
-.z1{
+
+.z1 {
     padding-top: 9px;
 }
-.z2{
+
+.z2 {
     padding-top: 9px;
 }
-.z3{
+
+.z3 {
     padding-top: 9px;
 }
-.z4{
+
+.z4 {
     padding-top: 9px;
 }
-.company-title{
-    font-weight:bold;
+
+.company-title {
+    font-weight: bold;
 }
-.company-bank{
+
+.company-bank {
     padding-top: 9px;
 }
-.company-delivery{
+
+.company-delivery {
     padding-top: 9px;
 }
+
+.delivery {
+    padding-top: 80px;
+    color: #2b2a29;
+    font-size: 16px;
+    font-family: 'OpenSans', Arial, sans-serif;
+}
+
+.company-1 {
+    padding-top: 9px;
+}
+
+.company-site {
+    padding-top: 80px;
+    color: #2b2a29;
+    font-size: 16px;
+    font-family: 'OpenSans', Arial, sans-serif;
+    padding-bottom: 40px;
+}
+
+.delivery-site {
+    padding-top: 80px;
+}
+
+.delivery-2 {
+    width: 500px;
+    height: 150px;
+    padding-top: 10px;
+
+    justify-content: center;
+    text-align: center;
+
+    color: white;
+    font-size: 19px;
+    font-family: 'OpenSans', Arial, sans-serif;
+    background: #1e8add;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 40%);
+}
+
+.delivery-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delivery-1-1 {
+    padding-top: 20px;
+    font-size: 19px;
+    font-family: 'OpenSans', Arial, sans-serif;
+    color: #2b2a29;
+    padding-bottom: 40px;
+}
+
