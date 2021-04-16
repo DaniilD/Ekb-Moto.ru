@@ -64,6 +64,12 @@
       <excludeFolder url="file://$MODULE_DIR$/moto/vendor/symfony/doctrine-bridge" />
       <excludeFolder url="file://$MODULE_DIR$/moto/vendor/symfony/stopwatch" />
       <excludeFolder url="file://$MODULE_DIR$/moto/vendor/friendsofphp/proxy-manager-lts" />
+      <excludeFolder url="file://$MODULE_DIR$/moto/vendor/twig/twig" />
+      <excludeFolder url="file://$MODULE_DIR$/moto/vendor/symfony/debug-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/moto/vendor/symfony/twig-bridge" />
+      <excludeFolder url="file://$MODULE_DIR$/moto/vendor/symfony/translation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/moto/vendor/symfony/twig-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/moto/vendor/symfony/asset" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
