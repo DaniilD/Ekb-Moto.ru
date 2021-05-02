@@ -1,0 +1,44 @@
+{% extends 'moto/base.html.twig' %}
+
+{% block content %}
+
+    <div class="spar-part-catalog">
+
+        {% for subcategory in subcategories %}
+
+            {% if loop.index % 2 == 0  %}
+                 <div class="part-catalog-item dark">
+            {% else %}
+                 <div class="part-catalog-item white">
+            {% endif %}
+                <div class="content part-catalog-item_content">
+                    <div class="part-catalog-item_info">
+                        <div class="catalog-item_info-title">
+                            {{ subcategory.name }}
+                        </div>
+                        <div class="catalog-item_info-description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi ipsa maxime molestiae!
+                        </div>
+                        <a href="/category/{{ subcategory.id }}">
+                            <div class="catalog-item_info-btn">
+                                <button class="btn">
+                                    Смотреть каталог
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="part-catalog-item_image">
+                        <a href="atv.html">
+                            <div class="part-catalog_img">
+                                <img src="image/q1.jpg"
+                                     alt="">
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}

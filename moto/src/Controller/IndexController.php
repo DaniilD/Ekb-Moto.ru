@@ -2,8 +2,10 @@
 
 namespace App\Controller;
 
+use App\Entity\Category;
 use App\Enums\CategoryNames;
 use App\Repository\CategoryRepository;
+use App\Repository\ProductRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -44,7 +46,7 @@ class IndexController extends AbstractController
      *
      * @return Response
      */
-    public function showCategory(Request $request, CategoryRepository $categoryRepository): Response
+    public function showCategory(Request $request, CategoryRepository $categoryRepository, ProductRepository $productRepository): Response
     {
         $categoryId = $request->attributes->getInt("id");
 
@@ -55,28 +57,73 @@ class IndexController extends AbstractController
             ->getQuery()
             ->getResult();
 
-        $category = $categoryRepository->find($categoryId);
+        $subcategories = $categoryRepository
+            ->createQueryBuilder('c')
+            ->andWhere('c.parentId = :categoryId')
+            ->setParameter('categoryId', $categoryId)
+            ->getQuery()
+            ->getResult();
 
-        if ($category->getName() === CategoryNames::SPARES) {
-            $subcategories = $categoryRepository
-                ->createQueryBuilder('c')
-                ->andWhere('c.parentId = :categoryId')
+        if (count($subcategories) > 0 && $subcategories[0]->getLevel() > 1) {
+            /** @var Category $subcategories */
+            if ($subcategories[0]->getLevel() === 2){
+                return $this->render('moto/sparesCategory.html.twig', [
+                    'categories'    => $categories,
+                    'subcategories' => $subcategories,
+                ]);
+            }elseif($subcategories[0]->getLevel() === 3) {
+                return $this->render('moto/sparesTechBrand.html.twig', [
+                    'categories'    => $categories,
+                    'subcategories' => $subcategories,
+                ]);
+            }else {
+                return $this->render('moto/sparesBrand.html.twig', [
+                    'categories'    => $categories,
+                    'subcategories' => $subcategories,
+                ]);
+            }
+        }else {
+            $products = $productRepository
+                ->createQueryBuilder('p')
+                ->andWhere('p.categoryId = :categoryId')
                 ->setParameter('categoryId', $categoryId)
                 ->getQuery()
                 ->getResult();
 
-            return $this->render('moto/subcategory.html.twig', [
-                'categories'    => $categories,
-                'subcategories' => $subcategories,
-            ]);
-
+            return $this->render('moto/catalog.html.twig',
+                [
+                    'categories' => $categories,
+                    'products'   => $products,
+                ]
+            );
         }
+    }
 
-        return $this->render('moto/products.html.twig',
+    /**
+     * @param Request           $request
+     * @param ProductRepository $productRepository
+     *
+     * @Route ("/product/{id}", name="product")
+     */
+    public function showProduct(Request $request, CategoryRepository $categoryRepository, ProductRepository $productRepository): Response
+    {
+        $productId = $request->attributes->getInt("id");
+
+        $categories = $categoryRepository
+            ->createQueryBuilder('c')
+            ->andWhere('c.parentId is null')
+            ->getQuery()
+            ->getResult();
+
+
+        $product = $productRepository->find($productId);
+
+        return $this->render('moto/product.html.twig',
             [
-                'categories' => $categories
+                'categories' => $categories,
+                'product' => $product
             ]
         );
-
     }
+
 }
