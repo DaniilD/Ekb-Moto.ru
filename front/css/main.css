@@ -891,3 +891,35 @@ text-align: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+.subcategory-lvl2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.subcategory-lvl2-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.subcategory-lvl2-item {
+    width: 16.6%;
+    margin-bottom: 15px;
+}
+
+.subcategory-lvl2-item-models {
+    display: flex;
+    flex-direction: column;
+}
+
+.subcategory-lvl2-item-title {
+    font-size: 28px;
+    color: #1240ab;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+.subcategory-lvl2-item-model {
+    font-size: 20px;
+    padding-bottom: 2px;
+}

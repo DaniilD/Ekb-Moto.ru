@@ -64,39 +64,28 @@ class IndexController extends AbstractController
             ->getQuery()
             ->getResult();
 
-        if (count($subcategories) > 0 && $subcategories[0]->getLevel() > 1) {
-            /** @var Category $subcategories */
-            if ($subcategories[0]->getLevel() === 2){
-                return $this->render('moto/sparesCategory.html.twig', [
-                    'categories'    => $categories,
-                    'subcategories' => $subcategories,
-                ]);
-            }elseif($subcategories[0]->getLevel() === 3) {
-                return $this->render('moto/sparesTechBrand.html.twig', [
-                    'categories'    => $categories,
-                    'subcategories' => $subcategories,
-                ]);
-            }else {
-                return $this->render('moto/sparesBrand.html.twig', [
-                    'categories'    => $categories,
-                    'subcategories' => $subcategories,
-                ]);
-            }
-        }else {
-            $products = $productRepository
-                ->createQueryBuilder('p')
-                ->andWhere('p.categoryId = :categoryId')
-                ->setParameter('categoryId', $categoryId)
-                ->getQuery()
-                ->getResult();
 
-            return $this->render('moto/catalog.html.twig',
-                [
-                    'categories' => $categories,
-                    'products'   => $products,
-                ]
-            );
+        if (empty($subcategories)) {
+            /**
+             * @todo заменить на 404 redirect
+             */
+            return $this->redirect('/');
         }
+
+        $template = '';
+        switch ($subcategories[0]->getLevel()) {
+            case 2:
+                $template = 'moto/category_lvl_1.html.twig';
+                break;
+            case 3:
+                $template = 'moto/category_lvl_2.html.twig';
+        }
+
+        return $this->render($template, [
+            'categories'    => $categories,
+            'subcategories' => $subcategories,
+        ]);
+
     }
 
     /**
@@ -121,7 +110,7 @@ class IndexController extends AbstractController
         return $this->render('moto/product.html.twig',
             [
                 'categories' => $categories,
-                'product' => $product
+                'product'    => $product,
             ]
         );
     }
