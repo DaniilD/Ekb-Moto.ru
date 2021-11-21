@@ -1,0 +1,42 @@
+{% extends 'moto/base.html.twig' %}
+
+{% block content %}
+
+    <div class="content">
+        <div class="product">
+            <div class="product-photo">
+                <img src="image/пример.jpg" alt="">
+            </div>
+            <div class="product-price">
+                <div
+                {{ product.name }}
+                </div>
+                <div class="name-detail">
+                    Применяется:
+                    <br> Артикул: {{ product.article }}
+
+                </div>
+{#                <div class="price">
+                    <div>
+                        Цена:
+                    </div>
+                    <div class="price-top">
+                        228
+                    </div>
+                </div>#}
+                <div class="name-detail-stock">
+                    Есть в наличии
+                    <div class="ok-photo">
+                        <img src="/image/ok.png" alt="">
+                    </div>
+
+                </div>
+                <div class="name-detail-info">
+                    Наш сайт не является интернет-магазином, поэтому приведённые цены и характеристики товаров носят
+                    исключительно ознакомительный характер и не являются публичной офертой.
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

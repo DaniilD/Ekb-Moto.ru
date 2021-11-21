@@ -1,0 +1,31 @@
+{% extends 'moto/base.html.twig' %}
+
+{% block content %}
+    <main>
+        <section class="catalog">
+            <div class="content">
+                <div class="title">Каталог товаров</div>
+                <div class="catalog-container">
+                    {% for product in products %}
+                    <div class="catalog-item">
+                        <div class="catalog-product">
+                            <div class="product-image">
+                                <img src="{{ product.image }}"
+                                     alt="">
+                            </div>
+                            <div class="product-title">
+                                {{ product.name }}
+                            </div>
+                            <div class="product-btn">
+                                <a href="/product/{{ product.id }}">
+                                    <button class="btn btn__product">Посмотреть</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock %}

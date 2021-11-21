@@ -9,16 +9,16 @@
             <div class="category_content-item">
                 <div class="item-line">
                     <div class="category_content-element"
-                         style='background: url("image/el1.jpg") 100% 100% no-repeat; background-size: cover;'>
+                         style='background: url("{{ mainCategories[constant('OIL', categoryNamesEnum)].image }}") 100% 100% no-repeat; background-size: cover;'>
                         <div class="category_content-element-title">
-                            масло
+                            {{ mainCategories[constant('OIL', categoryNamesEnum)].name }}
                         </div>
                     </div>
                     <a href="categories.html">
                         <div class="category_content-element"
-                             style='background: url("image/el2.jpg") 100% 100% no-repeat; background-size: cover;'>
+                             style='background: url("{{ mainCategories[constant('SPARES', categoryNamesEnum)].image }}") 100% 100% no-repeat; background-size: cover;'>
                             <div class="category_content-element-title">
-                                запчасти
+                                {{ mainCategories[constant('SPARES', categoryNamesEnum)].name }}
                             </div>
                         </div>
                     </a>
@@ -26,24 +26,24 @@
                 </div>
                 <div class="item-line">
                     <div class="category_content-element"
-                         style='background: url("image/el3.jpg") 100% 100% no-repeat; background-size: cover;'>
+                         style='background: url("{{ mainCategories[constant('MOTO_ACCESSORIES', categoryNamesEnum)].image }}") 100% 100% no-repeat; background-size: cover;'>
                         <div class="category_content-element-title">
-                            мотоаксессуары
+                            {{ mainCategories[constant('MOTO_ACCESSORIES', categoryNamesEnum)].name }}
                         </div>
                     </div>
                     <div class="category_content-element"
-                         style='background: url("image/el4.jpg") 100% 100% no-repeat; background-size: cover;'>
+                         style='background: url("{{ mainCategories[constant('TIRES_AND_CHAMBERS', categoryNamesEnum)].image }}") 100% 100% no-repeat; background-size: cover;'>
                         <div class="category_content-element-title">
-                            шины и камеры
+                            {{ mainCategories[constant('TIRES_AND_CHAMBERS', categoryNamesEnum)].name }}
                         </div>
                     </div>
                 </div>
             </div>
             <div class="category_content-item">
                 <div class="category_content-element-big"
-                     style='background: url("image/big.jpeg") 100% 100% no-repeat; background-size: cover;'>
+                     style='background: url("{{ mainCategories[constant('EQUIPMENT', categoryNamesEnum)].image }}") 100% 100% no-repeat; background-size: cover;'>
                     <div class="category_content-element-title">
-                        экипировка
+                        {{ mainCategories[constant('EQUIPMENT', categoryNamesEnum)].name }}
                     </div>
                 </div>
             </div>
@@ -56,11 +56,12 @@
             </div>
             <div class="company-texts">
                 <p class="company-text">
-                    У нас Вы можете найти запчасти к: снегоходам, квадроциклам, мотоциклам, мопедам и
-                    лодочным моторам.
-                    Так же можете найти: масла, экипировку, шины, камеры и мотоаксессуары.
+                    У нас Вы можете найти запчасти к: Снегоходам, Квадроциклам, мотоциклам, мопедам и лодочным моторам.
+                    Помимо запчастей, у нас есть в ассортименте расходники: масла, фильтра, экипировка, шины, камеры, мотоаксессуары и прочие расходники.
                 </p>
                 <p class="company-text">
+                    Вы можете позвонить в магазин по телефону, указанному на сайте. Наши специалисты проконсультируют по наличию.
+                    <br>
                     Быстро ответим и поможем подобрать любую запчасть или расходник.
                 </p>
                 <p class="company-text">

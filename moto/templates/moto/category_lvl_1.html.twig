@@ -1,0 +1,21 @@
+{% extends 'moto/base.html.twig' %}
+
+{% block content %}
+    <div class="content">
+        <div class="shop-block">
+            {% for category in subcategories %}
+                <a href="/category/{{ category.id }}">
+                    <div class="shop-block-elements">
+                        <div class="s1-img">
+                            <img src="{{ category.image }}"
+                                 alt="">
+                        </div>
+                        <div class="shop-block-text">
+                            {{ category.name }}
+                        </div>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

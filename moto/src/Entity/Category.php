@@ -32,6 +32,11 @@ class Category
      */
     private $parentId;
 
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $level;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -71,5 +76,21 @@ class Category
         $this->parentId = $parentId;
 
         return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLevel()
+    {
+        return $this->level;
+    }
+
+    /**
+     * @param mixed $level
+     */
+    public function setLevel($level): void
+    {
+        $this->level = $level;
     }
 }
